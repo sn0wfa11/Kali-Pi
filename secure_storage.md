@@ -29,7 +29,7 @@ You can use this parition to store data such as private keys or Open VPN connect
 
 - In the `Create New Partition` window, change the File System Type to `unformatted` and click `Add` at the bottom. (We will format it here in a bit.)
 
-- On the main gparted window, click `Edit` and select `Apply All Operations`.
+- On the main gparted window, click `Edit` and select `Apply All Operations` then `Apply` in the dialog box.
 
 - Once completed you should see a new partition at the end of the disk. In my case it was `/dev/sdb3`. Make a note of this partition name.
 
