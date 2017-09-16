@@ -48,9 +48,13 @@ The rest of the instructions are from the command line.
 
 Select a good password or passphrase. **Don't use the same password as root or any user on the Pi!!!** Since `/etc/shadow` could be readable by anyone with physical access to the Pi they could crack those passwords!!!
 
-Also, if you plan to use a script or other type of automated password entry, avoid special characters such as `\` and `$` as bash will filter them out when using the echo command used in thoes scripts. 
+**NOTE If you plan to use a script or other type of automated password entry, avoid the following sitatuations as they are not bash compatible in side the scripts.**
+  - The characters `\`, `$`, `'`, `"`, and the backtick character (The one under tilde on your keyboard)
+  - Having a `!` at the beginning of the password
+  
+The following characters are safe for password and scripts as long as they meet the above requirements: `~!@#%^&*()_-+=|[]{}:;,.<>/?`
 
-You can test your password by doing: `echo <password>` and see if what comes out matches your password.
+You can test your password by doing: `echo "<password>"` and see if what comes out matches your password.
 
 - Open the newly created volume (Use the same password you entered above.)
 
