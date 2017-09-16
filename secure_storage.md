@@ -48,7 +48,7 @@ The rest of the instructions are from the command line.
 
 Select a good password or passphrase. **Don't use the same password as root or any user on the Pi!!!** Since `/etc/shadow` could be readable by anyone with physical access to the Pi they could crack those passwords!!!
 
-**NOTE If you plan to use a script or other type of automated password entry, avoid the following sitatuations as they are not bash compatible in side the scripts.**
+**NOTE If you plan to use a script or other type of automated password entry, avoid the following sitatuations as they are not bash compatible and will not work in scripts or the Metasploit Module.**
   - The characters `\`, `$`, `'`, `"`, and the backtick character (The one under tilde on your keyboard)
   - Having a `!` at the beginning of the password
   
