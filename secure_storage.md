@@ -52,7 +52,9 @@ Select a good password or passphrase. **Don't use the same password as root or a
   - The characters `\`, `$`, `'`, `"`, and the backtick character (The one under tilde on your keyboard)
   - Having a `!` at the beginning of the password
   
-The following characters are safe for password and scripts as long as they meet the above requirements: `~!@#%^&*()_-+=|[]{}:;,.<>/?`
+The following characters are safe for password and scripts as long as they meet the above requirements: 
+
+`~!@#%^&*()_-+=|[]{}:;,.<>/?`
 
 You can test your password by doing: `echo "<password>"` and see if what comes out matches your password.
 
