@@ -104,15 +104,21 @@ Use the same password you selected during setup.
 
 And it is good to use. Some notes on usage are below.
 
-I have provided a bash script to make mounting the encrypted partition easier. It is located here:
+- I have provided a bash script to make mounting the encrypted partition easier. It is located here:
 
 https://github.com/sn0wfa11/Kali-Pi/blob/master/scripts/mount_encrypted.sh
 
-And one for Unmounting:
+- And one for Unmounting:
 
 https://github.com/sn0wfa11/Kali-Pi/blob/master/scripts/unmount.sh
 
-I will be adding a Metasploit Module to do the same thing soon.
+- I have also provided a Metasploit Module that will mount the encrypted partition. It is located here:
+
+https://github.com/sn0wfa11/msf/blob/master/modules/post/linux/mount_sec.rb
+
+You can change the defaults as you need or enter a default for the password if you want. You just need to change the Password datastore line as shown below:
+
+`OptString.new('PASSWORD',    [ true, "The password to unlock the LUKS partition.", "PUT YOUR PASSWORD HERE"]),`
 
 - If you need to unmount the partion use the following commands:
 
