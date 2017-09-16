@@ -106,7 +106,11 @@ And it is good to use. Some notes on usage are below.
 
 I have provided a bash script to make mounting the encrypted partition easier. It is located here:
 
-https://github.com/sn0wfa11/Kali-Pi/blob/master/mount_encrypted.sh
+https://github.com/sn0wfa11/Kali-Pi/blob/master/scripts/mount_encrypted.sh
+
+And one for Unmounting:
+
+https://github.com/sn0wfa11/Kali-Pi/blob/master/scripts/unmount.sh
 
 I will be adding a Metasploit Module to do the same thing soon.
 
