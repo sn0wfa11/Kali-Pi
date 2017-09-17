@@ -6,8 +6,15 @@ The instructions and the scripts in this repo will walk you through setting up y
 
 ## Getting Started
 First you will need to aquire a few things.
-- Raspberry Pi 3 Model B - [$34.99 on Amazon](https://www.amazon.com/Raspberry-Model-1-2GHz-64-bit-quad-core/dp/B01CD5VC92/ref=lp_5811495011_1_1?srs=5811495011&ie=UTF8&qid=1505689002&sr=8-1)
+- Raspberry Pi 3 Model B 
+  - [$34.99 on Amazon](https://www.amazon.com/Raspberry-Model-1-2GHz-64-bit-quad-core/dp/B01CD5VC92/ref=lp_5811495011_1_1?srs=5811495011&ie=UTF8&qid=1505689002&sr=8-1)
+  - [$35 from adafruit](https://www.adafruit.com/product/3055)
+- A high speed Micro-SD Card: 32 GB or 64 GB
+  - I use the [Samsung Pro Select Cards from Amazon](https://www.amazon.com/Samsung-MicroSD-Adapter-MB-MF64GA-AM/dp/B06XWZBM4N/ref=sr_1_4?s=electronics&ie=UTF8&qid=1505689168&sr=1-4&keywords=samsung+pro+sd+card)
+- A non-decript case
+  - [This $5.99 one from Amazon works nicely](https://www.amazon.com/Enokay-Black-Case-Raspberry-Model/dp/B011RBJUOC/ref=lp_14360649011_1_2?srs=14360649011&ie=UTF8&qid=1505689475&sr=8-2)
 
+## Initial Setup
 - Start with [initial_setup.md](https://github.com/sn0wfa11/Kali-Pi/blob/master/initial_setup.md)
 - Add an encrypted patition **(Highly Recomended)**: [secure_storage.md](https://github.com/sn0wfa11/Kali-Pi/blob/master/secure_storage.md)
 
