@@ -17,9 +17,8 @@ First you will need to aquire a few things.
 ## Initial Setup
 - Start with [initial_setup.md](https://github.com/sn0wfa11/Kali-Pi/blob/master/initial_setup.md) which will walk you through getting Kali running on your raspberry pi.
 - Add an encrypted patition **(Highly Recomended)**: [secure_storage.md](https://github.com/sn0wfa11/Kali-Pi/blob/master/secure_storage.md)
-  - Normally all files on the SD card are readable if someone finds the device and loads the SD card into their computer.
+  - Normally all files on the SD card are readable. If someone finds the device and loads the SD card into their computer they would have access to anything you store on the SD card. Adding an encryted partition provides you with a safer place to store private files or loot from a pentest.
   - If you plan on using OpenVPN or saving an SSH private key, this is a must.
-  - It also allows you a safe place to store any loot that you might get in a pentest.
 
 ## Connect back setup
 
