@@ -124,6 +124,8 @@ days=$((${upSeconds}/86400))
 printf "[*] Uptime: %d days %02d hours %02d minutes %02d seconds\n\n" "$days" "$hours" "$mins" "$secs"
 ```
 
+`chmod 0755 20-uptime`
+
 ### IP Information
 `nano 22-ipinfo`
 
@@ -135,6 +137,8 @@ printf "External: "
 dig +short myip.opendns.com @resolver1.opendns.com
 printf "\n"
 ```
+
+`chmod 0755 22-ipinfo`
 
 ### Secure partition mounted
 This is nice if you are using an encrypted partition as described [here](https://github.com/sn0wfa11/Kali-Pi/blob/master/secure_storage.md) becasue it will tell you if the encrypted partiton is unlocked and mounted or not.
@@ -152,3 +156,5 @@ fi
 
 printf "\n"
 ```
+
+`chmod 0755 24-secstorage`
