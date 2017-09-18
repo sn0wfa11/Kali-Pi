@@ -22,5 +22,6 @@ First you will need to aquire a few things.
 
 ## Connect back setup
 
+Remainder of instructions comming soon.
 
 **Disclaimer** Do not use any of these instructions or scripts for illegal use. They are provided for education or to assist professional penetration testers in setting up drop devices. Do not place these devices on networks you do not have permission to access. I am not responsible for illegal use of these devices.
