@@ -50,7 +50,7 @@ git clone https://github.com/xero/figlet-fonts
 cd figlet-fonts
 mv * /usr/share/figlet/
 cd $HOME/git
-rm -rf /figlet-fonts/
+rm -rf figlet-fonts/
 ```
 
 Now you can do really cool stuff like:
