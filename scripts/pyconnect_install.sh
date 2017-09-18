@@ -21,9 +21,11 @@ printf "# ${YEL}   Kali-Pi pyconnect HTTPS Service - Setup Script ${BLUE}    #\n
 printf "${BLUE}#-------------------------------------------------------#\n"
 printf "${BLUE}# ${CYAN}     By sn0wfa11 - https://github.com/sn0wfa11/       ${BLUE}#\n"
 printf "${BLUE}#########################################################\n\n"
-printf "${NC}This script will install a python https based connect back service\n"
-printf "The computer catching the shells will need to be running Metasploit\n"
-printf "using the ${GRN}python/meterpreter/reverse_https ${NC}payload.\n\n"
+printf "${NC}This script will install a python reverse https automatic\n"
+printf "connect back service called pyconnect. The computer catching\n"
+printf "the shells will need to be running Metasploit using the \n"
+printf "${GRN}python/meterpreter/reverse_https ${NC}payload.\n\n"
+printf "Visit: ${CYAN}https://github.com/sn0wfa11/Kali-Pi${NC} for instructions.\n\n"
 printf "${RED}This script will not validate your inputs! That's your job!\n\n${NC}"
 
 # Get and setup install path
