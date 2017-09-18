@@ -67,7 +67,7 @@ while [ $good -eq 0 ]; do
   fi
 done
 
-printf "${STAT}Writing met_https to $INSTALL_PATH\n"
+printf "\n${STAT}Writing met_https to $INSTALL_PATH\n"
 cat << EOF > met_https
 #!/usr/bin/python
 
@@ -129,7 +129,7 @@ chmod 0700 connect_worker
 sub1="$"
 sub1+="1"
 
-printf "#{STAT}Writing pyconnect to /etc/init.d\n"
+printf "${STAT}Writing pyconnect to /etc/init.d\n"
 cat << EOF > /etc/init.d/pyconnect
 #!/bin/sh
 # /etc/init.d/pyconnect
@@ -146,11 +146,11 @@ cat << EOF > /etc/init.d/pyconnect
 
 case "$sub1" in
   start)
-    echo "Starting pyconnect"
+    echo "Starting pyconnect service"
     $INSTALL_PATH/connect_worker &
     ;;
   stop)
-    echo "Stopping pyconnect"
+    echo "Stopping pyconnect service"
     killall connect_worker
     ;;
   *)
@@ -163,12 +163,12 @@ exit 0
 EOF
 
 chmod 0700 /etc/init.d/pyconnect
-printf "#{STAT}Setting pyconnect to start at boot\n"
+printf "${STAT}Setting pyconnect to start at boot\n"
 update-rc.d pyconnect defaults
-printf "${STAT}Starting pyconnect\n"
+printf "${STAT}Attempting to Start pyconnect\n\n"
 /etc/init.d/pyconnect start
-printf "${GRN}Done!${NC}\n\n"
-printf "${STAT}You can change the IP Address and Port by editing $INSTALL_PATH/connect_worker\n"
+printf "\n${GRN}Done!${NC}\n\n"
+printf "${STAT}You can change the IP Address and Port by editing $INSTALL_PATH/connect_worker\n\n"
 
 
 
