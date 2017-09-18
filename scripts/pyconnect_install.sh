@@ -169,8 +169,8 @@ printf "${STAT}Setting pyconnect to start at boot\n"
 update-rc.d pyconnect defaults
 printf "${STAT}Attempting to start pyconnect\n\n"
 /etc/init.d/pyconnect start
-printf "\n${GRN}Done!${NC}\n\n"
-printf "${STAT}You can change IP Address and Port by editing $INSTALL_PATH/connect_worker\n"
+printf "\n${GRN}[*] Done!${NC}\n\n"
+printf "${STAT}You can change IP Address and Port by editing ${GRN}$INSTALL_PATH/connect_worker${NC}\n"
 printf "${STAT}You can start and stop pyconnect service using ${GRN}/etc/init.d/pyconnect {start|stop}${NC}\n\n"
 
 
