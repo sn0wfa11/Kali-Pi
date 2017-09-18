@@ -57,7 +57,7 @@ Now you can do really cool stuff like:
 
 `figlet -w 120 -f "ANSI Shadow" kalipi`
 
-Which produces:
+Which produces: (It looks better in your console, github spaces things poorly...)
 
 ```
 ██╗  ██╗ █████╗ ██╗     ██╗██████╗ ██╗
@@ -67,3 +67,15 @@ Which produces:
 ██║  ██╗██║  ██║███████╗██║██║     ██║
 ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝╚═╝     ╚═╝
 ```
+
+Usage: 
+
+`figlet -w <width in chars> -f "<FontName>" <Message>`
+
+The fonts can be found in `/usr/share/figlet/`
+
+You can test out what you want it to say at http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20 The fonts are the same on this site.
+
+Man page: http://www.figlet.org/figlet-man.html
+
+
