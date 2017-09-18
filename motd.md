@@ -48,7 +48,7 @@ mkdir -p $HOME/git
 cd $HOME/git
 git clone https://github.com/xero/figlet-fonts
 cd figlet-fonts
-mv * /use/share/figlet/
+mv * /usr/share/figlet/
 cd $HOME/git
 rm -rf /figlet-fonts/
 ```
