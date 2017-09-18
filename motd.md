@@ -78,4 +78,77 @@ You can test out what you want it to say at http://patorjk.com/software/taag/#p=
 
 Man page: http://www.figlet.org/figlet-man.html
 
+## Build header script
+The first script to build is your header which I like to have the host name in a cool font and maybe a message.
 
+```
+cd /etc/update-motd.d/
+nano 10-header
+```
+
+Here is an example from one of my Kali-Pi's
+
+```
+#!/bin/bash
+
+printf "\n"
+figlet -w 120 -f "ANSI Shadow" kalipi
+figlet -w 130 -f "Star Wars" "Don't Panic"
+printf "\n"
+printf "Or do... Makes no difference to me!\n\n"
+```
+
+Save and exit.
+
+Now make the file executable.
+
+`chmod 0755 10-header`
+
+You can logout and ssh back in to see what it looks like.
+
+## Additional Scripts
+Here are some additional scripts you can use to provide you with usefull info when you log in.
+
+Anything you can do in a bash script can be done here, the sky's the limit... Enjoy.
+
+### Uptime
+`nano 20-uptime`
+
+```
+#!/bin/bash
+upSeconds="$(/usr/bin/cut -d. -f1 /proc/uptime)"
+secs=$((${upSeconds}%60))
+mins=$((${upSeconds}/60%60))
+hours=$((${upSeconds}/3600%24))
+days=$((${upSeconds}/86400))
+printf "[*] Uptime: %d days %02d hours %02d minutes %02d seconds\n\n" "$days" "$hours" "$mins" "$secs"
+```
+
+### IP Information
+`nano 22-ipinfo`
+
+```
+#!/bin/bash
+printf "[*] IP Information\n"
+ip -f inet -o addr | grep -v '127.0.0.1' | awk -F " " '{print $2" "$4}' | cut -d "/" -f 1
+printf "External: "
+dig +short myip.opendns.com @resolver1.opendns.com
+printf "\n"
+```
+
+### Secure partition mounted
+This is nice if you are using an encrypted partition as described [here](https://github.com/sn0wfa11/Kali-Pi/blob/master/secure_storage.md) becasue it will tell you if the encrypted partiton is unlocked and mounted or not.
+
+`nano 24-secstorage`
+
+```
+#!/bin/bash
+check=$(mount | grep -c /root/secstorage)
+if [ $check -ge 1 ]; then
+  printf "[*] Secure Storage is Mounted at /root/secstorage\n"
+else
+  printf "[*] Secure Storage is not Mounted.\n"
+fi
+
+printf "\n"
+```
