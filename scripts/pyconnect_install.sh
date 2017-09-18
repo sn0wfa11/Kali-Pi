@@ -16,11 +16,11 @@ CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 STAT="${GRN}[*] ${NC}"
 
-printf "\n${BLUE}####################################################\n"
-printf "# ${YEL}Kali-Pi Python HTTPS Connect Back - Setup Script ${BLUE}#\n"
-printf "${BLUE}#--------------------------------------------------#\n"
-printf "${BLUE}# ${CYAN}   By sn0wfa11 - https://github.com/sn0wfa11/    ${BLUE}#\n"
-printf "${BLUE}####################################################\n\n"
+printf "\n${BLUE}#########################################################\n"
+printf "# ${YEL}   Kali-Pi pyconnect HTTPS Service - Setup Script ${BLUE}    #\n"
+printf "${BLUE}#-------------------------------------------------------#\n"
+printf "${BLUE}# ${CYAN}     By sn0wfa11 - https://github.com/sn0wfa11/       ${BLUE}#\n"
+printf "${BLUE}#########################################################\n\n"
 printf "${NC}This script will install a python https based connect back service\n"
 printf "The computer catching the shells will need to be running Metasploit\n"
 printf "using the ${GRN}python/meterpreter/reverse_https ${NC}payload.\n\n"
